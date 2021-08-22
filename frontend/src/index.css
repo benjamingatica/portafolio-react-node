@@ -1,0 +1,325 @@
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+.boton-cerrar-sesion{
+  border: 0px;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-image: url('./img/paven.png');
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;  
+}
+
+/*
+ * Header
+ */
+.masthead {  
+  padding: 20px;
+  color: #fff;    
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+.inner{
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*
+ * Footer
+ */
+.mastfoot {    
+  padding: 20px;
+  color: #fff;  
+}
+
+.titulo-tramos{
+  text-align: left;
+}
+
+.list-group-item{
+  padding: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.opciones-tramos:hover{
+  cursor: pointer;
+}
+
+.trivia{  
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 1px #bbb3b3;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.contenedor-pregunta{
+  background-color: rgb(13, 172, 13);
+  border-radius: 20px;
+  height: 400px;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contenedor-pregunta .pregunta{
+  background-color: #f5f5f5;
+  margin: 10px auto;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.contenedor-pregunta .opcion-pregunta{
+  border: 1px solid black;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.contenedor-pregunta .opcion-pregunta:hover{
+  background-color: #bbb3b3;
+  cursor: pointer;
+}
+
+.contenedor-ranking{
+  background-color: green;
+}
+
+.contenedor-ranking .numero-ranking{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  border-right: 1px solid #e7e7e7;
+}
+
+.contenedor-ranking .list-group-item{
+  margin: 0px;
+  padding: 0px;
+}
+
+.contenedor-ranking .fila-ranking{
+  padding: 10px;  
+}
+
+.contenedor-ranking .fila-ranking:hover{
+  cursor: pointer;
+}
+
+.cronometro{  
+  background-color: rgb(55, 55, 218);
+  color: white;
+  width: 100px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 0px black;
+  margin-top: 10px;
+}
+
+footer a{
+  transition: all 300ms;
+}
+
+footer a:hover{
+  text-decoration: none;
+  color: black;
+}
+
+/* INICIO HOME */
+.contenedor-home{
+  background-color: white;
+}
+
+.home-intro{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#image-avatar{
+  width: 200px;
+}
+
+.home-presentacion{    
+  background-color: #28a745;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.home-skills{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin:0px auto;
+  width: 80%;
+}
+
+.home-skills img{
+  height: 100px;  
+}
+
+.contenedor-imagen-skills{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#download-cv{  
+  margin: 0px auto;
+  margin-top: 50px;
+}
+
+.home-hobbies{
+  background-color: #28a745;
+  padding-top: 20px;
+  padding-bottom: 20px;  
+}
+
+.contenedor-hobbies{
+  width: 80%;
+  margin: 0px auto;
+}
+
+.contenedor-imagen-hobbies{
+  margin-top: 20px;
+  margin-bottom: 20px;  
+}
+
+.home-hobbies img{
+  height: 100px;  
+}
+
+.home-github{
+  margin-top: 20px;
+  margin-bottom: 20px;  
+}
+
+.home-github a{
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 300ms;
+}
+
+.home-github a:hover{
+  color:rgb(13, 172, 13);
+}
+
+/* FIN HOME */
+
+/* INICIO LOGIN */
+.contenedor-desafios{
+  background-color: white;
+}
+
+.info-desafios{
+  width: 80%;
+  margin: 0px auto;  
+  margin-top: 20px;
+}
+
+.contenedor-login{  
+  width: 500px;
+  margin: 0px auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: black;
+  color: white;
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  box-shadow: 5px 5px 1px #bbb3b3;
+}
+
+.contenedor-login hr{
+  background-color: white;
+}
+
+/* FIN LOGIN */
+
+/* INICIO TRAMOS */
+.reglas-trivia{
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 1px #bbb3b3;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.listado-tramos{
+  background-color: white;
+  box-shadow: 5px 5px 1px #bbb3b3;
+}
+/* FIN TRAMOS */
+
+/* INICIO responsive del form de login */
+@media (max-width: 560px) {
+  .contenedor-login{
+    width: 80%;
+  }
+}
+/* FIN responsive del form de login */
